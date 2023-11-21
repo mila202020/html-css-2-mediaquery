@@ -1,0 +1,350 @@
+/* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
+* {box-sizing: border-box;}
+hr {display: none;} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+}
+header div img {
+    margin-bottom: 20px;
+}
+header nav ul {
+    margin: 0;
+}
+header nav li {
+    list-style: none;
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: red;
+}
+header nav li a::before {
+    content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+}
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
+}
+h1 + p {
+    color: #a0a0a0;
+}
+ul, ol {
+    margin-left: 2em;
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+}
+strong {
+    color: #a02571;
+    font-weight: bold;
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+main img{
+    border:3px solid  cyan;
+    outline: 3px solid deeppink
+
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+ h2{
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a {
+    color: fuchsia;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Utilizza il layout flessibile */
+    text-align: center;
+    justify-content: center;
+}
+
+ul li {
+    margin-right: 10px; /* Aggiungi spazio tra gli elementi della lista */
+}
+section h2{
+    background-color: grey;
+}
+/*******SVHERMI PICCOLIIII***********/
+
+@media screen and (max-width: 575px){
+    main h2{
+        font-weight: unset;
+    }
+   
+
+    main img{
+        width: 20%;
+    }
+}
+/*******TABLETTTTTT***********/
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 576px)  and (max-width:1000px)
+{ 
+  
+    main img {
+        width: 9%;
+    }
+     h1 {
+        font-size: xxx-large;
+    }
+  article {
+    justify-content: center;
+  }
+  table {
+    margin: 9% auto;
+
+    width: 80%;
+ }
+}
+/********PER COMPUTERRRRSSSS****/
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 1001px) { 
+    main img {
+        width: 5%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* Distribuisce gli elementi su tutta la larghezza */
+        align-items: center; /* Centra verticalmente gli elementi */
+        text-align: center;
+        padding-bottom: 1%
+        
+    }
+
+    header div {
+        display: flex; /* Per allineare l'immagine e il paragrafo orizzontalmente */
+        align-items: center; /* Centra verticalmente gli elementi all'interno di div */
+    }
+    
+   
+    
+    header nav ul {
+        list-style: none;
+        display: flex; /* Per allineare gli elementi della lista orizzontalmente */
+    }
+    
+    header nav li {
+        margin-right: 20px; /* Aggiungi uno spazio tra gli elementi della lista,  */
+    }
+    h1{
+        font-size: xxx-large;
+    }
+    body{
+        padding-left:5% ;
+        padding-right: 5%;
+    }
+    table {
+        margin: 9% auto;
+    
+        width: 80%;
+     }
+    .riunito{
+        display: flex;
+        align-items: center; /* Allinea al centro verticalmente,  */
+        height: 200px; 
+        margin: 5% 0;
+
+    }
+    main iframe,
+   main section {
+    width: 50%; /*  occupare tutto lo spazio disp per 2 caselle */
+    height: 100%;
+}
+.contenitoredidiv {
+    display: flex;
+    justify-content: space-between;
+}
+.contenitoredidiv div{
+    width: 35%; /* occupare tutto lo spazio disp per 3 caselle */
+    height: 100%;
+}
+
+ }
+/*****************PER STAMPARE *************************/
+@media print {
+    header nav,
+    header img,
+    iframe,
+    article section,
+    aside,
+    footer,
+    .social, 
+    .toTop,
+    main article img,
+    i
+     {
+        display: none;
+    }
+    body {
+        font-size: 1.3 em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    main h2{
+        font-size: 2 em;
+        font-weight: bold;
+    }
+    h1 + p {
+        font-weight: bold;
+    }
+    main , header{
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    header p{
+        font-size: 1.1em;
+        font-weight: bold;
+        color: black;
+    }
+    strong ,a {
+        color: grey;
+        text-decoration: none;
+    }
+    code {
+        background-color: none;
+        border-radius: none;
+        border: none;
+    }
+}
+
+
+ 
